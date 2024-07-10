@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +39,7 @@
             color: #90caf9;
         }
         .hero {
-            background: linear-gradient(to bottom right, #1e88e5, #42a5f5);
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
             color: white;
             padding: 5em 0;
             text-align: center;
@@ -64,7 +65,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        .service, .contact-section, .reference, .about, .inicio {
+        .inicio, .service, .contact-section, .reference, .about {
             background-color: #bbdefb;
             border: 2px solid #90caf9;
             border-radius: 12px;
@@ -136,7 +137,7 @@
             }
         }
         @media (min-width: 600px) {
-            .service, .contact-section, .reference, .about, .inicio {
+            .inicio, .service, .contact-section, .reference, .about {
                 flex-direction: row;
                 text-align: left;
             }
@@ -160,7 +161,7 @@
                 display: block;
                 margin: 0.5em 0;
             }
-            .service, .contact-section, .reference, .about, .inicio {
+            .inicio, .service, .contact-section, .reference, .about {
                 text-align: center;
             }
         }
@@ -191,8 +192,13 @@
     </div>
     <div class="container section active inicio" id="inicio">
         <h2>Inicio</h2>
-        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
-        <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
+        <div class="inicio">
+            <img src="https://via.placeholder.com/150" alt="Terapeuta de lenguaje">
+            <div>
+                <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
+                <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
+            </div>
+        </div>
     </div>
     <div class="container section" id="about">
         <!-- Apartado Sobre mí vacío -->

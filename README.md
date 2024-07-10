@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -169,6 +169,35 @@
                 text-align: center;
             }
         }
+        .comment-box {
+            width: 100%;
+            max-width: 600px;
+            margin: 1em auto;
+            padding: 1em;
+            border: 2px solid #bbdefb;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        .comment-box textarea {
+            width: 100%;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .comment-box button {
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .comment-box button:hover {
+            background-color: #1565c0;
+        }
     </style>
     <script>
         function showSection(sectionId) {
@@ -272,6 +301,14 @@
                 <h3>Ana Martínez</h3>
                 <p>"El enfoque personalizado y la atención a detalle han hecho una gran diferencia en el desarrollo del lenguaje de mi hija. Estamos muy agradecidos."</p>
             </div>
+        </div>
+        <div class="comment-box">
+            <h3>Deja tu comentario</h3>
+            <form>
+                <textarea name="comment" rows="4" placeholder="Escribe tu comentario aquí..."></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
     <div class="container section" id="contact">

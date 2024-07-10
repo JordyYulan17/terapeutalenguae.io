@@ -65,7 +65,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        .service, .contact-section, .reference, .about {
+        .service, .contact-section, .reference, .about, .inicio {
             background-color: #bbdefb;
             border: 2px solid #90caf9;
             border-radius: 12px;
@@ -78,7 +78,7 @@
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .service img, .contact-section img, .reference img, .about img {
+        .service img, .contact-section img, .reference img, .about img, .inicio img {
             max-width: 100px;
             margin-bottom: 1em;
             border-radius: 8px;
@@ -86,7 +86,7 @@
         .service img {
             max-width: 200px;
         }
-        .service:hover, .contact-section:hover, .reference:hover, .about:hover {
+        .service:hover, .contact-section:hover, .reference:hover, .about:hover, .inicio:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
@@ -137,11 +137,11 @@
             }
         }
         @media (min-width: 600px) {
-            .service, .contact-section, .reference, .about {
+            .service, .contact-section, .reference, .about, .inicio {
                 flex-direction: row;
                 text-align: left;
             }
-            .service img, .contact-section img, .reference img, .about img {
+            .service img, .contact-section img, .reference img, .about img, .inicio img {
                 margin-bottom: 0;
                 margin-right: 1.5em;
             }
@@ -161,7 +161,7 @@
                 display: block;
                 margin: 0.5em 0;
             }
-            .service, .contact-section, .reference, .about {
+            .service, .contact-section, .reference, .about, .inicio {
                 text-align: center;
             }
         }
@@ -180,6 +180,7 @@
         <h1>Terapeuta de lenguaje</h1>
     </header>
     <nav>
+        <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
         <a href="#about" onclick="showSection('about')">Sobre mí</a>
         <a href="#services" onclick="showSection('services')">Servicios</a>
         <a href="#references" onclick="showSection('references')">Referencias</a>
@@ -189,7 +190,12 @@
         <h1>Bienvenido a Terapeuta de lenguaje</h1>
         <p>Mejorando la comunicación, un paso a la vez</p>
     </div>
-    <div class="container section active about" id="about">
+    <div class="container section active inicio" id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
+        <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
+    </div>
+    <div class="container section" id="about">
         <!-- Apartado Sobre mí vacío -->
     </div>
     <div class="container section" id="services">

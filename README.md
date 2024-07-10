@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #e3f2fd; /* Fondo azul claro */
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff4081;
+            background-color: #1e88e5; /* Azul más oscuro */
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -23,7 +23,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #ff6f00;
+            background-color: #1565c0; /* Azul intermedio */
             color: white;
             padding: 1em;
             text-align: center;
@@ -36,10 +36,10 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ff4081;
+            color: #90caf9; /* Azul claro */
         }
         .hero {
-            background: linear-gradient(to bottom right, #ff80ab, #ff4081);
+            background: linear-gradient(to bottom right, #1e88e5, #42a5f5); /* Degradado de azules */
             color: white;
             padding: 5em 0;
             text-align: center;
@@ -66,8 +66,8 @@
             margin: 0 auto;
         }
         .service, .contact-section, .reference, .about {
-            background-color: #e3f2fd; /* Cambio de color a un tono azul claro */
-            border: 2px solid #90caf9; /* Bordes en un tono azul más oscuro */
+            background-color: #bbdefb; /* Azul muy claro */
+            border: 2px solid #90caf9; /* Bordes en azul más claro */
             border-radius: 12px;
             margin: 1em 0;
             padding: 1.5em;
@@ -84,14 +84,14 @@
             border-radius: 8px;
         }
         .service img {
-            max-width: 200px; /* Tamaño ajustado para la imagen de servicios a domicilio */
+            max-width: 200px;
         }
         .service:hover, .contact-section:hover, .reference:hover, .about:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background-color: #ff4081;
+            background-color: #1e88e5; /* Azul más oscuro */
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -101,7 +101,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 2em;
-            background-color: #fff3e0;
+            background-color: #bbdefb; /* Azul muy claro */
             padding: 2em;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -165,114 +165,70 @@
         <h1>Terapeuta de lenguaje</h1>
     </header>
     <nav>
-        <a href="#about" onclick="showSection('about')">Sobre mi</a>
+        <a href="#about" onclick="showSection('about')">Sobre mí</a>
         <a href="#services" onclick="showSection('services')">Servicios</a>
         <a href="#references" onclick="showSection('references')">Referencias</a>
         <a href="#contact" onclick="showSection('contact')">Contacto</a>
     </nav>
     <div class="hero">
         <h1>Bienvenido a Terapeuta de lenguaje</h1>
-        <p>Mejorando la comunicacion, un paso a la vez</p>
+        <p>Mejorando la comunicación, un paso a la vez</p>
     </div>
     <div class="container section active about" id="about">
-        <h2>Sobre mi</h2>
-        <p>Bienvenido a mi pagina web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicacion. Con anos de 
-
-experiencia y certificaciones en el campo, estoy aqui para ofrecerte los mejores servicios a domicilio.</p>
-        <p>La terapia de lenguaje es una disciplina dedicada a la evaluacion y tratamiento de problemas de comunicacion y trastornos del lenguaje. Los terapeutas de 
-
-lenguaje trabajan con personas de todas las edades, desde ninos pequenos hasta adultos mayores, que tienen dificultades con la comunicacion. Estos problemas pueden 
-
-incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
+        <h2>Sobre mí</h2>
+        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
+        <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
         <p>Entre los servicios que ofrecemos se incluyen:</p>
         <ul>
-            <li><strong>Evaluacion y diagnostico:</strong> Realizamos evaluaciones completas para identificar cualquier problema de comunicacion o trastorno del 
-
-lenguaje. Esto nos permite crear un plan de tratamiento personalizado que aborda las necesidades especificas de cada paciente.</li>
-            <li><strong>Terapia del habla:</strong> Trabajamos con individuos que tienen dificultades para articular sonidos, ayudandoles a mejorar su pronunciacion y 
-
-claridad del habla.</li>
-            <li><strong>Terapia del lenguaje:</strong> Ayudamos a las personas a mejorar sus habilidades de lenguaje receptivo (comprender lo que otros dicen) y 
-
-lenguaje expresivo (comunicar sus propios pensamientos y sentimientos).</li>
-            <li><strong>Terapia de la voz:</strong> Tratamos a aquellos con problemas de voz, como ronquera cronica o perdida de la voz, utilizando tecnicas para 
-
-mejorar la calidad y el volumen de la voz.</li>
-            <li><strong>Tratamiento de la tartamudez:</strong> Proporcionamos estrategias y tecnicas para ayudar a las personas que tartamudean a hablar con mayor 
-
-fluidez y confianza.</li>
-            <li><strong>Intervencion temprana:</strong> Trabajamos con ninos pequenos que muestran signos de retrasos en el habla o el lenguaje, proporcionando 
-
-estimulacion y apoyo para promover un desarrollo saludable del lenguaje.</li>
+            <li><strong>Evaluación y diagnóstico:</strong> Realizamos evaluaciones completas para identificar cualquier problema de comunicación o trastorno del lenguaje. Esto nos permite crear un plan de tratamiento personalizado que aborda las necesidades específicas de cada paciente.</li>
+            <li><strong>Terapia del habla:</strong> Trabajamos con individuos que tienen dificultades para articular sonidos, ayudándoles a mejorar su pronunciación y claridad del habla.</li>
+            <li><strong>Terapia del lenguaje:</strong> Ayudamos a las personas a mejorar sus habilidades de lenguaje receptivo (comprender lo que otros dicen) y lenguaje expresivo (comunicar sus propios pensamientos y sentimientos).</li>
+            <li><strong>Terapia de la voz:</strong> Tratamos a aquellos con problemas de voz, como ronquera crónica o pérdida de la voz, utilizando técnicas para mejorar la calidad y el volumen de la voz.</li>
+            <li><strong>Tratamiento de la tartamudez:</strong> Proporcionamos estrategias y técnicas para ayudar a las personas que tartamudean a hablar con mayor fluidez y confianza.</li>
+            <li><strong>Intervención temprana:</strong> Trabajamos con niños pequeños que muestran signos de retrasos en el habla o el lenguaje, proporcionando estimulación y apoyo para promover un desarrollo saludable del lenguaje.</li>
         </ul>
-        <p>En nuestra practica, nos esforzamos por crear un ambiente calido y acogedor donde los pacientes se sientan comodos y apoyados. Entendemos que cada persona 
-
-es unica, y nuestros tratamientos estan disenados para ser flexibles y adaptarse a las necesidades individuales. Si tienes alguna preocupacion sobre la comunicacion o 
-
-el lenguaje, estamos aqui para ayudarte a encontrar soluciones efectivas y compasivas.</p>
+        <p>En nuestra práctica, nos esforzamos por crear un ambiente cálido y acogedor donde los pacientes se sientan cómodos y apoyados. Entendemos que cada persona es única, y nuestros tratamientos están diseñados para ser flexibles y adaptarse a las necesidades individuales. Si tienes alguna preocupación sobre la comunicación o el lenguaje, estamos aquí para ayudarte a encontrar soluciones efectivas y compasivas.</p>
     </div>
     <div class="container section" id="services">
         <h2>Servicios</h2>
         <div class="service">
-            <img src="https://media.istockphoto.com/id/1446236920/es/foto/profesor-y-ni%C3%B1a-en-clase-de-logopedia.jpg?
-
-s=612x612&w=0&k=20&c=Qa7DK5zAowhQd91mOd3WVZ06jAklDC2jA8Mey9_hvVc=" alt="Servicios a domicilio">
+            <img src="https://media.istockphoto.com/id/1446236920/es/foto/profesor-y-ni%C3%B1a-en-clase-de-logopedia.jpg?s=612x612&w=0&k=20&c=Qa7DK5zAowhQd91mOd3WVZ06jAklDC2jA8Mey9_hvVc=" alt="Servicios a domicilio">
             <div>
                 <h3>Servicios a domicilio</h3>
-                <p>Ofrecemos terapia de lenguaje directamente en la comodidad de tu hogar. Nuestro servicio a domicilio esta disenado para proporcionar una atencion 
-
-personalizada y comoda para nuestros pacientes, garantizando un entorno familiar y seguro.</p>
-                <p>Realizamos sesiones de evaluacion y tratamiento en el hogar del paciente, adaptandonos a sus horarios y necesidades. Este enfoque facilita la 
-
-colaboracion con la familia y permite un seguimiento mas cercano del progreso del paciente en su entorno diario.</p>
+                <p>Ofrecemos terapia de lenguaje directamente en la comodidad de tu hogar. Nuestro servicio a domicilio está diseñado para proporcionar una atención personalizada y cómoda para nuestros pacientes, garantizando un entorno familiar y seguro.</p>
+                <p>Realizamos sesiones de evaluación y tratamiento en el hogar del paciente, adaptándonos a sus horarios y necesidades. Este enfoque facilita la colaboración con la familia y permite un seguimiento más cercano del progreso del paciente en su entorno diario.</p>
             </div>
         </div>
         <div class="service">
             <img src="https://via.placeholder.com/150" alt="Terapia de lenguaje">
             <div>
                 <h3>Terapia de lenguaje</h3>
-                <p>Tratamientos personalizados para mejorar las habilidades de comunicacion. Trabajamos con personas de todas las edades, utilizando tecnicas y 
-
-herramientas avanzadas para abordar diversos problemas del lenguaje y la comunicacion.</p>
-                <p>Nuestros programas incluyen actividades interactivas y ejercicios especificos disenados para mejorar el vocabulario, la gramatica, la comprension y 
-
-la expresion verbal. Nos enfocamos en desarrollar estrategias que los pacientes puedan utilizar en su vida diaria para mejorar su comunicacion.</p>
+                <p>Tratamientos personalizados para mejorar las habilidades de comunicación. Trabajamos con personas de todas las edades, utilizando técnicas y herramientas avanzadas para abordar diversos problemas del lenguaje y la comunicación.</p>
+                <p>Nuestros programas incluyen actividades interactivas y ejercicios específicos diseñados para mejorar el vocabulario, la gramática, la comprensión y la expresión verbal. Nos enfocamos en desarrollar estrategias que los pacientes puedan utilizar en su vida diaria para mejorar su comunicación.</p>
             </div>
         </div>
         <div class="service">
             <img src="https://via.placeholder.com/150" alt="Tratamiento para tartamudez">
             <div>
                 <h3>Tratamiento para tartamudez</h3>
-                <p>Ayudamos a reducir la tartamudez y mejorar la fluidez del habla. Nuestros programas estan disenados para aumentar la confianza y la capacidad de 
-
-hablar con facilidad en diversas situaciones sociales y profesionales.</p>
-                <p>Utilizamos tecnicas de control de la respiracion, ejercicios de relajacion y estrategias de comunicacion efectiva para ayudar a los pacientes a 
-
-manejar su tartamudez. Tambien trabajamos en el desarrollo de habilidades sociales y de afrontamiento para aumentar la autoconfianza del paciente.</p>
+                <p>Ayudamos a reducir la tartamudez y mejorar la fluidez del habla. Nuestros programas están diseñados para aumentar la confianza y la capacidad de hablar con facilidad en diversas situaciones sociales y profesionales.</p>
+                <p>Utilizamos técnicas de control de la respiración, ejercicios de relajación y estrategias de comunicación efectiva para ayudar a los pacientes a manejar su tartamudez. También trabajamos en el desarrollo de habilidades sociales y de afrontamiento para aumentar la autoconfianza del paciente.</p>
             </div>
         </div>
         <div class="service">
-            <img src="https://via.placeholder.com/150" alt="Trastorno fonologico">
+            <img src="https://via.placeholder.com/150" alt="Trastorno fonológico">
             <div>
-                <h3>Trastorno fonologico</h3>
-                <p>Tratamientos para corregir errores en la produccion de sonidos del habla. Evaluamos y disenamos planes de tratamiento especificos para ayudar a 
-
-nuestros pacientes a superar las dificultades fonologicas y mejorar su pronunciacion.</p>
-                <p>Nuestros terapeutas utilizan juegos, actividades ludicas y ejercicios repetitivos para ensenar a los ninos a producir los sonidos correctamente. 
-
-Tambien trabajamos con los padres para que puedan apoyar el desarrollo del habla de sus hijos en casa.</p>
+                <h3>Trastorno fonológico</h3>
+                <p>Tratamientos para corregir errores en la producción de sonidos del habla. Evaluamos y diseñamos planes de tratamiento específicos para ayudar a nuestros pacientes a superar las dificultades fonológicas y mejorar su pronunciación.</p>
+                <p>Nuestros terapeutas utilizan juegos, actividades lúdicas y ejercicios repetitivos para enseñar a los niños a producir los sonidos correctamente. También trabajamos con los padres para que puedan apoyar el desarrollo del habla de sus hijos en casa.</p>
             </div>
         </div>
         <div class="service">
             <img src="https://via.placeholder.com/150" alt="Estimulación de lenguaje">
             <div>
                 <h3>Estimulación de lenguaje</h3>
-                <p>Ejercicios y actividades para fomentar el desarrollo del lenguaje en ninos. Utilizamos metodos ludicos y efectivos para estimular el lenguaje en 
-
-ninos, ayudandoles a alcanzar hitos importantes en su desarrollo comunicativo.</p>
-                <p>Proporcionamos un entorno rico en lenguaje, utilizando juegos, canciones y lecturas interactivas para estimular el desarrollo del lenguaje en ninos 
-
-pequenos. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una experiencia divertida y atractiva para los ninos.</p>
+                <p>Ejercicios y actividades para fomentar el desarrollo del lenguaje en niños. Utilizamos métodos lúdicos y efectivos para estimular el lenguaje en niños, ayudándoles a alcanzar hitos importantes en su desarrollo comunicativo.</p>
+                <p>Proporcionamos un entorno rico en lenguaje, utilizando juegos, canciones y lecturas interactivas para estimular el desarrollo del lenguaje en niños pequeños. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una experiencia divertida y atractiva para los niños.</p>
             </div>
         </div>
     </div>
@@ -281,26 +237,22 @@ pequenos. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una expe
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 1">
             <div>
-                <h3>Maria Gomez</h3>
-                <p>"La terapia de lenguaje con este profesional ha sido una experiencia maravillosa para mi hijo. Hemos visto un progreso significativo en su habla y 
-
-confianza."</p>
+                <h3>María Gómez</h3>
+                <p>"La terapia de lenguaje con este profesional ha sido una experiencia maravillosa para mi hijo. Hemos visto un progreso significativo en su habla y confianza."</p>
             </div>
         </div>
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 2">
             <div>
-                <h3>Carlos Rodriguez</h3>
+                <h3>Carlos Rodríguez</h3>
                 <p>"Recomiendo altamente estos servicios. El terapeuta es muy paciente y conocedor, y ha ayudado mucho a mi padre con su tartamudez."</p>
             </div>
         </div>
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 3">
             <div>
-                <h3>Ana Martinez</h3>
-                <p>"El enfoque personalizado y la atencion a detalle han hecho una gran diferencia en el desarrollo del lenguaje de mi hija. Estamos muy 
-
-agradecidos."</p>
+                <h3>Ana Martínez</h3>
+                <p>"El enfoque personalizado y la atención a detalle han hecho una gran diferencia en el desarrollo del lenguaje de mi hija. Estamos muy agradecidos."</p>
             </div>
         </div>
     </div>
@@ -317,7 +269,7 @@ agradecidos."</p>
         <div class="contact-section">
             <img src="https://via.placeholder.com/150" alt="Contacto">
             <div>
-                <h3>Telefono</h3>
+                <h3>Teléfono</h3>
                 <p>+1 234 567 890</p>
             </div>
         </div>
@@ -327,4 +279,3 @@ agradecidos."</p>
     </footer>
 </body>
 </html>
-

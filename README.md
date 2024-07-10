@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #e3f2fd;
+            background-color: #f0f4f8;
             color: #333;
             margin: 0;
             padding: 0;
@@ -36,10 +36,10 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #90caf9;
+            color: #ffca28;
         }
         .hero {
-            background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+            background: linear-gradient(to bottom right, #1e88e5, #42a5f5), url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
             color: white;
             padding: 5em 0;
             text-align: center;
@@ -49,6 +49,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .hero h1 {
             font-size: 4em;
@@ -66,8 +67,8 @@
             margin: 0 auto;
         }
         .inicio, .service, .contact-section, .reference, .about {
-            background-color: #bbdefb;
-            border: 2px solid #90caf9;
+            background-color: #ffffff;
+            border: 2px solid #bbdefb;
             border-radius: 12px;
             margin: 1em 0;
             padding: 1.5em;
@@ -81,10 +82,12 @@
         .service img, .contact-section img, .reference img, .about img, .inicio img {
             max-width: 100px;
             margin-bottom: 1em;
-            border-radius: 8px;
+            border-radius: 50%;
+            border: 4px solid #1e88e5;
+            transition: transform 0.3s;
         }
-        .service img {
-            max-width: 200px;
+        .service img:hover, .contact-section img:hover, .reference img:hover, .about img:hover, .inicio img:hover {
+            transform: scale(1.1);
         }
         .service:hover, .contact-section:hover, .reference:hover, .about:hover, .inicio:hover {
             transform: translateY(-5px);
@@ -95,6 +98,7 @@
             color: white;
             padding: 1em 0;
             text-align: center;
+            margin-top: 2em;
         }
         .contact-info {
             display: flex;

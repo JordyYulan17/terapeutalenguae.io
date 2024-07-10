@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #e3f2fd; /* Fondo azul claro */
+            background-color: #e3f2fd;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1e88e5; /* Azul más oscuro */
+            background-color: #1e88e5;
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -23,7 +23,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #1565c0; /* Azul intermedio */
+            background-color: #1565c0;
             color: white;
             padding: 1em;
             text-align: center;
@@ -36,10 +36,10 @@
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #90caf9; /* Azul claro */
+            color: #90caf9;
         }
         .hero {
-            background: linear-gradient(to bottom right, #1e88e5, #42a5f5); /* Degradado de azules */
+            background: linear-gradient(to bottom right, #1e88e5, #42a5f5);
             color: white;
             padding: 5em 0;
             text-align: center;
@@ -66,8 +66,8 @@
             margin: 0 auto;
         }
         .service, .contact-section, .reference, .about {
-            background-color: #bbdefb; /* Azul muy claro */
-            border: 2px solid #90caf9; /* Bordes en azul más claro */
+            background-color: #bbdefb;
+            border: 2px solid #90caf9;
             border-radius: 12px;
             margin: 1em 0;
             padding: 1.5em;
@@ -91,7 +91,7 @@
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         footer {
-            background-color: #1e88e5; /* Azul más oscuro */
+            background-color: #1e88e5;
             color: white;
             padding: 1em 0;
             text-align: center;
@@ -101,7 +101,7 @@
             flex-direction: column;
             align-items: center;
             margin-top: 2em;
-            background-color: #bbdefb; /* Azul muy claro */
+            background-color: #bbdefb;
             padding: 2em;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -150,6 +150,21 @@
                 justify-content: space-around;
             }
         }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+            .service, .contact-section, .reference, .about {
+                text-align: center;
+            }
+        }
     </style>
     <script>
         function showSection(sectionId) {
@@ -176,7 +191,7 @@
     </div>
     <div class="container section active about" id="about">
         <h2>Sobre mí</h2>
-        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
+        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
         <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
         <p>Entre los servicios que ofrecemos se incluyen:</p>
         <ul>

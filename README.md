@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -190,19 +190,7 @@
         <p>Mejorando la comunicación, un paso a la vez</p>
     </div>
     <div class="container section active about" id="about">
-        <h2>Sobre mí</h2>
-        <p>Bienvenido a mi página web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicación. Con años de experiencia y certificaciones en el campo, estoy aquí para ofrecerte los mejores servicios a domicilio.</p>
-        <p>La terapia de lenguaje es una disciplina dedicada a la evaluación y tratamiento de problemas de comunicación y trastornos del lenguaje. Los terapeutas de lenguaje trabajan con personas de todas las edades, desde niños pequeños hasta adultos mayores, que tienen dificultades con la comunicación. Estos problemas pueden incluir trastornos del habla, del lenguaje, de la voz y de la fluidez, como la tartamudez.</p>
-        <p>Entre los servicios que ofrecemos se incluyen:</p>
-        <ul>
-            <li><strong>Evaluación y diagnóstico:</strong> Realizamos evaluaciones completas para identificar cualquier problema de comunicación o trastorno del lenguaje. Esto nos permite crear un plan de tratamiento personalizado que aborda las necesidades específicas de cada paciente.</li>
-            <li><strong>Terapia del habla:</strong> Trabajamos con individuos que tienen dificultades para articular sonidos, ayudándoles a mejorar su pronunciación y claridad del habla.</li>
-            <li><strong>Terapia del lenguaje:</strong> Ayudamos a las personas a mejorar sus habilidades de lenguaje receptivo (comprender lo que otros dicen) y lenguaje expresivo (comunicar sus propios pensamientos y sentimientos).</li>
-            <li><strong>Terapia de la voz:</strong> Tratamos a aquellos con problemas de voz, como ronquera crónica o pérdida de la voz, utilizando técnicas para mejorar la calidad y el volumen de la voz.</li>
-            <li><strong>Tratamiento de la tartamudez:</strong> Proporcionamos estrategias y técnicas para ayudar a las personas que tartamudean a hablar con mayor fluidez y confianza.</li>
-            <li><strong>Intervención temprana:</strong> Trabajamos con niños pequeños que muestran signos de retrasos en el habla o el lenguaje, proporcionando estimulación y apoyo para promover un desarrollo saludable del lenguaje.</li>
-        </ul>
-        <p>En nuestra práctica, nos esforzamos por crear un ambiente cálido y acogedor donde los pacientes se sientan cómodos y apoyados. Entendemos que cada persona es única, y nuestros tratamientos están diseñados para ser flexibles y adaptarse a las necesidades individuales. Si tienes alguna preocupación sobre la comunicación o el lenguaje, estamos aquí para ayudarte a encontrar soluciones efectivas y compasivas.</p>
+        <!-- Apartado Sobre mí vacío -->
     </div>
     <div class="container section" id="services">
         <h2>Servicios</h2>

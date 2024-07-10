@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        .section {
+        .service, .contact-section, .reference, .about {
             background-color: #e3f2fd; /* Cambio de color a un tono azul claro */
             border: 2px solid #90caf9; /* Bordes en un tono azul más oscuro */
             border-radius: 12px;
@@ -78,49 +78,17 @@
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-        .section img {
+        .service img, .contact-section img, .reference img, .about img {
             max-width: 100px;
             margin-bottom: 1em;
             border-radius: 8px;
         }
-        .section img.service-img {
+        .service img {
             max-width: 200px; /* Tamaño ajustado para la imagen de servicios a domicilio */
         }
-        .section:hover {
+        .service:hover, .contact-section:hover, .reference:hover, .about:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-        }
-        .form-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #e3f2fd;
-            border: 2px solid #90caf9;
-            border-radius: 12px;
-            padding: 2em;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: 1em 0;
-        }
-        .form-container input {
-            margin: 0.5em 0;
-            padding: 0.5em;
-            border: 1px solid #90caf9;
-            border-radius: 4px;
-            width: 100%;
-            max-width: 300px;
-        }
-        .form-container button {
-            background-color: #ff4081;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5em 1em;
-            margin-top: 1em;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .form-container button:hover {
-            background-color: #ff6f00;
         }
         footer {
             background-color: #ff4081;
@@ -142,8 +110,11 @@
             margin-bottom: 1em;
             text-align: center;
         }
-        .hidden {
+        .section {
             display: none;
+        }
+        .section.active {
+            display: block;
         }
         @keyframes fadeInDown {
             from {
@@ -166,11 +137,11 @@
             }
         }
         @media (min-width: 600px) {
-            .section {
+            .service, .contact-section, .reference, .about {
                 flex-direction: row;
                 text-align: left;
             }
-            .section img {
+            .service img, .contact-section img, .reference img, .about img {
                 margin-bottom: 0;
                 margin-right: 1.5em;
             }
@@ -183,9 +154,9 @@
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(section => {
-                section.classList.add('hidden');
+                section.classList.remove('active');
             });
-            document.getElementById(sectionId).classList.remove('hidden');
+            document.getElementById(sectionId).classList.add('active');
         }
     </script>
 </head>
@@ -198,14 +169,12 @@
         <a href="#services" onclick="showSection('services')">Servicios</a>
         <a href="#references" onclick="showSection('references')">Referencias</a>
         <a href="#contact" onclick="showSection('contact')">Contacto</a>
-        <a href="#register" onclick="showSection('register')">Registrarse</a>
-        <a href="#login" onclick="showSection('login')">Iniciar sesion</a>
     </nav>
     <div class="hero">
         <h1>Bienvenido a Terapeuta de lenguaje</h1>
         <p>Mejorando la comunicacion, un paso a la vez</p>
     </div>
-    <div class="container section about" id="about">
+    <div class="container section active about" id="about">
         <h2>Sobre mi</h2>
         <p>Bienvenido a mi pagina web. Soy un terapeuta de lenguaje especializado en ayudar a personas a mejorar sus habilidades de comunicacion. Con anos de 
 
@@ -242,10 +211,10 @@ es unica, y nuestros tratamientos estan disenados para ser flexibles y adaptarse
 
 el lenguaje, estamos aqui para ayudarte a encontrar soluciones efectivas y compasivas.</p>
     </div>
-    <div class="container section hidden" id="services">
+    <div class="container section" id="services">
         <h2>Servicios</h2>
-        <div class="section">
-            <img class="service-img" src="https://media.istockphoto.com/id/1446236920/es/foto/profesor-y-ni%C3%B1a-en-clase-de-logopedia.jpg?
+        <div class="service">
+            <img src="https://media.istockphoto.com/id/1446236920/es/foto/profesor-y-ni%C3%B1a-en-clase-de-logopedia.jpg?
 
 s=612x612&w=0&k=20&c=Qa7DK5zAowhQd91mOd3WVZ06jAklDC2jA8Mey9_hvVc=" alt="Servicios a domicilio">
             <div>
@@ -258,7 +227,7 @@ personalizada y comoda para nuestros pacientes, garantizando un entorno familiar
 colaboracion con la familia y permite un seguimiento mas cercano del progreso del paciente en su entorno diario.</p>
             </div>
         </div>
-        <div class="section">
+        <div class="service">
             <img src="https://via.placeholder.com/150" alt="Terapia de lenguaje">
             <div>
                 <h3>Terapia de lenguaje</h3>
@@ -270,7 +239,7 @@ herramientas avanzadas para abordar diversos problemas del lenguaje y la comunic
 la expresion verbal. Nos enfocamos en desarrollar estrategias que los pacientes puedan utilizar en su vida diaria para mejorar su comunicacion.</p>
             </div>
         </div>
-        <div class="section">
+        <div class="service">
             <img src="https://via.placeholder.com/150" alt="Tratamiento para tartamudez">
             <div>
                 <h3>Tratamiento para tartamudez</h3>
@@ -282,7 +251,7 @@ hablar con facilidad en diversas situaciones sociales y profesionales.</p>
 manejar su tartamudez. Tambien trabajamos en el desarrollo de habilidades sociales y de afrontamiento para aumentar la autoconfianza del paciente.</p>
             </div>
         </div>
-        <div class="section">
+        <div class="service">
             <img src="https://via.placeholder.com/150" alt="Trastorno fonologico">
             <div>
                 <h3>Trastorno fonologico</h3>
@@ -294,7 +263,7 @@ nuestros pacientes a superar las dificultades fonologicas y mejorar su pronuncia
 Tambien trabajamos con los padres para que puedan apoyar el desarrollo del habla de sus hijos en casa.</p>
             </div>
         </div>
-        <div class="section">
+        <div class="service">
             <img src="https://via.placeholder.com/150" alt="Estimulación de lenguaje">
             <div>
                 <h3>Estimulación de lenguaje</h3>
@@ -307,9 +276,9 @@ pequenos. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una expe
             </div>
         </div>
     </div>
-    <div class="container section hidden" id="references">
+    <div class="container section" id="references">
         <h2>Referencias</h2>
-        <div class="section">
+        <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 1">
             <div>
                 <h3>Maria Gomez</h3>
@@ -318,14 +287,14 @@ pequenos. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una expe
 confianza."</p>
             </div>
         </div>
-        <div class="section">
+        <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 2">
             <div>
                 <h3>Carlos Rodriguez</h3>
                 <p>"Recomiendo altamente estos servicios. El terapeuta es muy paciente y conocedor, y ha ayudado mucho a mi padre con su tartamudez."</p>
             </div>
         </div>
-        <div class="section">
+        <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 3">
             <div>
                 <h3>Ana Martinez</h3>
@@ -335,17 +304,17 @@ agradecidos."</p>
             </div>
         </div>
     </div>
-    <div class="container section hidden" id="contact">
+    <div class="container section" id="contact">
         <h2>Contacto</h2>
         <p>Si tienes alguna pregunta o deseas agendar una cita, por favor no dudes en contactarme.</p>
-        <div class="section">
+        <div class="contact-section">
             <img src="https://via.placeholder.com/150" alt="Contacto">
             <div>
                 <h3>Email</h3>
                 <p>info@terapeutadelenguaje.com</p>
             </div>
         </div>
-        <div class="section">
+        <div class="contact-section">
             <img src="https://via.placeholder.com/150" alt="Contacto">
             <div>
                 <h3>Telefono</h3>
@@ -353,25 +322,9 @@ agradecidos."</p>
             </div>
         </div>
     </div>
-    <div class="container section hidden" id="register">
-        <h2>Registrarse</h2>
-        <div class="form-container">
-            <input type="text" placeholder="Nombre completo">
-            <input type="email" placeholder="Correo electronico">
-            <input type="password" placeholder="Contrasena">
-            <button>Registrarse</button>
-        </div>
-    </div>
-    <div class="container section hidden" id="login">
-        <h2>Iniciar sesion</h2>
-        <div class="form-container">
-            <input type="email" placeholder="Correo electronico">
-            <input type="password" placeholder="Contrasena">
-            <button>Iniciar sesion</button>
-        </div>
-    </div>
     <footer>
         <p>&copy; 2024 Terapeuta de lenguaje. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+

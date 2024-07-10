@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@
         }
         .section {
             background-color: #e3f2fd; /* Cambio de color a un tono azul claro */
-            border: 2px solid #90caf9; /* Bordes en un tono azul más oscuro */
+            border: 2px solid #90caf9; /* Bordes en un tono azul mÃ¡s oscuro */
             border-radius: 12px;
             margin: 1em 0;
             padding: 1.5em;
@@ -84,7 +84,7 @@
             border-radius: 8px;
         }
         .section img.service-img {
-            max-width: 200px; /* Tamaño ajustado para la imagen de servicios a domicilio */
+            max-width: 200px; /* TamaÃ±o ajustado para la imagen de servicios a domicilio */
         }
         .section:hover {
             transform: translateY(-5px);
@@ -255,9 +255,9 @@
             </div>
         </div>
         <div class="section">
-            <img src="https://via.placeholder.com/150" alt="Estimulación de lenguaje">
+            <img src="https://via.placeholder.com/150" alt="EstimulaciÃ³n de lenguaje">
             <div>
-                <h3>Estimulación de lenguaje</h3>
+                <h3>EstimulaciÃ³n de lenguaje</h3>
                 <p>Ejercicios y actividades para fomentar el desarrollo del lenguaje en ninos. Utilizamos metodos ludicos y efectivos para estimular el lenguaje en ninos, ayudandoles a alcanzar hitos importantes en su desarrollo comunicativo.</p>
                 <p>Proporcionamos un entorno rico en lenguaje, utilizando juegos, canciones y lecturas interactivas para estimular el desarrollo del lenguaje en ninos pequenos. Nuestro objetivo es hacer que el aprendizaje del lenguaje sea una experiencia divertida y atractiva para los ninos.</p>
             </div>

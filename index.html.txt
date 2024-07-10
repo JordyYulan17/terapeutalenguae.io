@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -237,21 +237,21 @@
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 1">
             <div>
-                <h3>Maria Gomez</h3>
+                <h3>María Gómez</h3>
                 <p>"La terapia de lenguaje con este profesional ha sido una experiencia maravillosa para mi hijo. Hemos visto un progreso significativo en su habla y confianza."</p>
             </div>
         </div>
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 2">
             <div>
-                <h3>Carlos Rodriguez</h3>
+                <h3>Carlos Rodríguez</h3>
                 <p>"Recomiendo altamente estos servicios. El terapeuta es muy paciente y conocedor, y ha ayudado mucho a mi padre con su tartamudez."</p>
             </div>
         </div>
         <div class="reference">
             <img src="https://via.placeholder.com/100" alt="Referencia 3">
             <div>
-                <h3>Ana Martinez</h3>
+                <h3>Ana Martínez</h3>
                 <p>"El enfoque personalizado y la atención a detalle han hecho una gran diferencia en el desarrollo del lenguaje de mi hija. Estamos muy agradecidos."</p>
             </div>
         </div>
